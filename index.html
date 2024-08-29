@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Momentum Survey</title>
+        <link rel="stylesheet" href="styles.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1 id="title">Momentum Survey</h1>
+        <p class="description" id="description">Thank you for improving our group</p>
+        <div class="form-container">
+            <form id="survey-form" action="">
+                <div class="form-item">
+                    <label class="form-text" id="name-label">Discord</label>
+                    <input
+                        required 
+                        class="text-input" 
+                        type="text"
+                        id="name"
+                        placeholder=" Please enter your Discord ID"
+                    />
+                </div>
+                <div class="form-item">
+                    <label class="form-text" id="email-label">Email</label>
+                    <input
+                    required 
+                    class="text-input"
+                    type="email"
+                    id="email"
+                    placeholder=" Please enter an Email Address"
+                    />
+                </div>
+                <div class="form-item">
+                    <label class="form-text" id="number-label">How many passes do you own?</label>
+                    <input 
+                        class="text-input" 
+                        type="number"
+                        id="number"
+                        max="333"
+                        min="1"
+                        placeholder=" Enter number of passes owned"
+                    />
+                </div>
+                <div class="form-item">
+                    <label class="form-text" for="dropdown">What asset are you most proficient at trading?</label>
+                    <select class="dropdown" id="dropdown">
+                        <option value="">Select an asset type</option>
+                        <option value="nft">NFTs</option>
+                        <option value="crypto">Crypto</option>
+                        <option value="shitcoins">Shitcoins</option>
+                        <option value="legacy">Legacy Markets</option>
+                    </select>
+                </div>
+                <div class="form-item">
+                    <label class="form-text" for="recommendation">How likely are you to recommend Momentum to a friend?</label><br>
+                    <input name="recommendation" class="radio-buttons" type="radio" value="definitely"> Definitely <br>
+                    <input name="recommendation" class="radio-buttons" type="radio" value="likely"> Likely <br>
+                    <input name="recommendation" class="radio-buttons" type="radio" value="maybe"> Maybe <br>
+                    <input name="recommendation" class="radio-buttons" type="radio" value="unlikely"> Unlikely <br>
+                    <input name="recommendation" class="bottom-radio-button" type="radio" value="never"> Never <br>
+                </div>
+                <div>
+                    <label class="form-text" for="utilities">What utilities have you taken advantage of? (Select all that apply)</label><br>
+                    <input class="checkboxes" type="checkbox" value="Giveaways"> Giveaways<br>
+                    <input class="checkboxes" type="checkbox" value="Shitcoin Streams"> Shitcoin Streams<br>
+                    <input class="checkboxes" type="checkbox" value="Verified Contract Bot"> Verified Contract Bot<br>
+                    <input class="checkboxes" type="checkbox" value="Alpha Gardeners"> Alpha Gardeners<br>
+                    <input class="checkboxes" type="checkbox" value="3gm"> 3gm<br>
+                    <input class="checkboxes" type="checkbox" value="Ninjalerts"> Ninjalerts<br>
+                    <input class="checkboxes" type="checkbox" value="Breeze"> Breeze<br>
+                    <input class="checkboxes" type="checkbox" value="Mintech"> Mintech<br>
+                    <input class="checkboxes" type="checkbox" value="NFThunder"> NFThunder<br>
+                    <input class="checkboxes" type="checkbox" value="Waifu"> Waifu<br>
+                    <input class="checkboxes" type="checkbox" value="Lendel Pro Trader"> Lendel Pro Trader<br>
+                    <input class="checkboxes" type="checkbox" value="Momentum Node"> Momentum Node<br>
+                    <input class="checkboxes" type="checkbox" value="TenX Tools"> TenX Tools<br>
+                    <input class="bottom-checkbox" type="checkbox" value="Hook"> Hook<br>
+                </div>
+                <div class="form-item">
+                    <label class="form-text" for="comments">Please add any additional comments or suggestions</label> <br>
+                    <textarea 
+                        id="comments" 
+                        class="textarea" 
+                        name="comment"
+                        placeholder=" Enter comments or suggestions here...">
+                    </textarea>
+                </div>
+                <div class="form-item">
+                    <button type="submit" id="submit" class="submit-button">Submit</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
